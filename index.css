@@ -1,9 +1,6 @@
 /* Using Belanosima and Poppins Font */
 @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Poppins:wght@500;700&display=swap');
 
-/* font-family: 'Belanosima', sans-serif;
-font-family: 'Poppins', sans-serif; */
-
 * {
     margin: 0;
     padding: 0;
@@ -12,36 +9,31 @@ font-family: 'Poppins', sans-serif; */
 }
 
 body {
-    background-color: #1d1d1d; /* Updated background color */
-    color: #e0e0e0; /* Updated text color */
+    background-color: #1d1d1d;
+    color: #e0e0e0;
 }
 
 /* Navbar section */
 .prim-color {
-    background-color: #2196F3; /* Updated primary color */
+    background-color: #2196F3;
 }
 
 a span {
     font-family: 'Belanosima', sans-serif;
     font-size: 1.5rem;
-    color: #ffffff; /* Updated link color */
+    color: #ffffff;
 }
 
 button span i {
-    color: #2196F3; /* Updated button icon color */
+    color: #2196F3;
     font-size: 2rem;
 }
 
 /* offcanvas section and card Heading */
 h5 {
     font-family: 'Belanosima', sans-serif;
-    font-size: 1.8rem; /* Increased font size */
-    color: #2196F3; /* Updated heading color */
-}
-
-/* Heading Section */
-#heading {
-    margin-top: 5rem; /* Increased margin */
+    font-size: 1.8rem;
+    color: #2196F3;
 }
 
 /* Header Search bar */
@@ -50,40 +42,63 @@ h5 {
 }
 
 #search-bar input {
-    height: 3rem; /* Increased input height */
-    border-radius: 25px; /* Increased border radius */
-    padding: 0 25px !important; /* Adjusted padding */
-    font-size: 1.3rem; /* Increased font size */
+    height: 3rem;
+    border-radius: 25px;
+    padding: 0 25px !important;
+    font-size: 1.3rem;
+    transition: all 0.3s ease-in-out;
+}
+
+#search-bar input:focus {
+    border: 2px solid #2196F3;
+    box-shadow: 0 0 10px #2196F3;
 }
 
 /* Card section */
 #card {
-    background-color: #2196F3; /* Updated card background color */
-    padding: 15px; /* Increased padding */
+    background-color: #2196F3;
+    padding: 15px;
     color: #ffffff;
+    transition: transform 0.3s ease-in-out;
+}
+
+#card:hover {
+    transform: translateY(-10px);
 }
 
 #card img {
-    border-radius: 10px; /* Reduced border radius */
+    border-radius: 10px;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* meal details container */
+/* Toast Notifications */
+.toast {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1055;
+    background-color: #2196F3;
+    color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+/* Meal details container */
 #meal-details {
     width: 100%;
-    padding: 30px; /* Increased padding */
-    border-radius: 30px; /* Increased border radius */
+    padding: 30px;
+    border-radius: 30px;
     background-color: #2196F3;
 }
 
 #meal-header {
-    width: 80%; /* Adjusted width */
+    width: 80%;
     margin: auto;
 }
 
 #meal-thumbnail img {
-    height: 280px; /* Increased image height */
-    width: 280px; /* Increased image width */
+    height: 280px;
+    width: 280px;
     border-radius: 10px;
 }
 
@@ -99,7 +114,7 @@ h5 {
 #meal-instruction {
     margin: auto;
     text-align: center;
-    font-weight: bold; /* Added font weight */
+    font-weight: bold;
 }
 
 /* favourites offcanvas */
@@ -108,3 +123,29 @@ h5 {
     color: #ffffff;
 }
 
+/* Footer section */
+footer {
+    background-color: #2196F3;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease-in-out;
+}
+
+footer .social-icons a:hover {
+    color: #000;
+}
